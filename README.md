@@ -10,19 +10,20 @@
 
 ## 系统支持
 
-**请务必使用新系统，纯净的VPS系统安装!!!**
+**请务必使用新系统，纯净的 VPS 系统安装!!!**
 
-- Debian 8 
+- Debian 8
 - **Debian 9(推荐)**
 - Ubuntu 14
 - Ubuntu 16
 - CentOS 7
 
 ## 不支持
+
 - CentOS 6
 
 ## 一键安装
 
 目前处于测试阶段，不保证一键脚本能安装成功
-> wget -N --no-check-certificate https://raw.githubusercontent.com/FunctionClub/V2ray.Fun/master/install.sh && bash install.sh
 
+> wget -N --no-check-certificate https://raw.githubusercontent.com/azraelrabbit/V2ray.Fun/master/install-fun.sh && bash install-fun.sh

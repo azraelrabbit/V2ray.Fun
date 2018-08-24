@@ -41,14 +41,14 @@ def get_status():
 
 @app.route('/start_service')
 def start_service():
-    cmd = "service v2ray start"
+    cmd = "service v2ray-fun start"
     commands.getoutput(cmd)
     change_config("status","on")
     return "OK"
 
 @app.route('/stop_service')
 def stop_service():
-    cmd = "service v2ray stop"
+    cmd = "service v2ray-fun stop"
     commands.getoutput(cmd)
     change_config("status", "off")
     return "OK"
@@ -56,7 +56,7 @@ def stop_service():
 
 @app.route('/restart_service')
 def restart_service():
-    cmd = "service v2ray restart"
+    cmd = "service v2ray-fun restart"
     commands.getoutput(cmd)
     change_config("status", "on")
     return "OK"
@@ -204,7 +204,7 @@ def get_info():
 
 @app.route('/get_access_log')
 def get_access_log():
-    file = open('/var/log/v2ray/access.log',"r")
+    file = open('/var/log/v2ray/access-fun.log',"r")
     content = file.read().split("\n")
     min_length = min(20,len(content))
     content = content[-min_length:]
@@ -215,7 +215,7 @@ def get_access_log():
 
 @app.route('/get_error_log')
 def get_error_log():
-    file = open('/var/log/v2ray/error.log',"r")
+    file = open('/var/log/v2ray/error-fun.log',"r")
     content = file.read().split("\n")
     min_length = min(20,len(content))
     content = content[-min_length:]

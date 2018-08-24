@@ -72,8 +72,8 @@ def gen_server():
     server_raw = """
 {
     "log": {
-        "access": "/var/log/v2ray/access.log",
-        "error": "/var/log/v2ray/error.log",
+        "access": "/var/log/v2ray/access-fun.log",
+        "error": "/var/log/v2ray/error-fun.log",
         "loglevel": "info"
     },
     "inbound": {
